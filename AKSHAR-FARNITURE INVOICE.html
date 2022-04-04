@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AKSHAR FARNITURE INVOICE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		.container {
+		width: 50%;
+		margin: 0 auto;
+		border: 1px solid red;
+		padding: 5px;
+		color: red;
+		background-color: yellow;
+		font-weight: bold;
+		}
+		.mwrap {
+			display: flex;
+			font-size: 15px;
+			justify-content: space-between;
+		}
+		.t1 {
+			margin: 0 auto;
+			font-size: 12px;
+			padding-left: 100px;
+		}
+		h2.title {
+		text-align: center;
+		margin: -3px;
+		font-size: 30px;
+		}
+		.addre {
+			font-weight: 300;
+			margin-top: 4px;
+		display: block;
+		}
+		.form-left {
+		width: 86%;
+		}
+		input {
+		width: 100%;
+		border: none;
+		background: transparent;
+		margin-left: 9px;
+		border-bottom: 1px solid red;
+		color: red;
+		}
+		input:focus {
+		border: none!important;
+		border-bottom: 1px solid green!important;
+		}
+		form.form-inline {
+		border: 1px solid red;
+		padding: 10px 5px;
+		border-radius: 8px;
+		margin-top: 5px;
+		height: 70px;
+		}
+		.in-wra {
+		margin-bottom: 10px;
+		}
+		form.form-inline.f2 {
+		margin-left: 5px;
+		}
+		.f2-wra input{
+			border: none;
+		}
+		.f2-wra {
+			border-bottom: 1px solid red;
+		}
+		.last {
+			border-bottom: none;
+		}
+		.f2-wra label {
+			width: 100%;
+		}
+		.phone {
+			margin-left: 10px;
+		}
+		.min {
+			margin-left: 2px;
+		}
+		.f2in {
+			margin-left: -30px;
+		}
+		.sales-wrap {
+			border: 1px solid red;
+			margin-top: 3px;
+			border-radius: 5px;
+			padding: 2px 5px;
+		}
+		.sain {
+		width: 87%;
+		margin-left: -38px;
+		padding-top: -15px;
+		height: 14px;
+		margin-top: 2px;
+		}
+		.one label {
+		width: 31%;
+		border-bottom: none;
+		}
+		.one input{
+			border-bottom: none;
+		}
+		.mob {
+		width: 44%;
+		border-left: 1px solid red;
+		margin: -2px;
+		padding-left: 5px;
+		}
+		label.mm {
+		margin-top: 2px;
+		}
+		table#customers {
+		width: 100%;
+		margin-top: 3px;
+		border-collapse: collapse;
+		}
+		table, th {
+		border: 1px solid;
+		padding: 3px;
+		}
+		td {
+		border-right: 1px solid;
+		padding: 5px;
+		text-align: center;
+		}
+		td.rt {
+		border: 1px solid;
+		}
+		ul {
+		margin-left: -20px;
+		}
+		.infor {
+			display: flex;
+			margin-top: 16px;
+		}
+		span.inname {
+		font-size: 22px;
+		margin-top: -5px;
+		margin-left: 5px;
+		}
+		.mwrap.for-wra {
+		margin-bottom: -15px;
+		}
+		/*media query css*/
+		@media screen and (max-width: 1225px) {
+			.mwrap {
+			font-size: 14px;
+			}
+			.one label {
+			width: 39%;
+			}
+			span.inname {
+			font-size: 18px;
+			margin-top: -3px;
+			}
+		@media screen and (max-width: 1085px) {
+			.mwrap {
+			font-size: 13px;
+			}
+			span.inname {
+			font-size: 15px;
+			margin-top: 0px;
+			}
+		}
+		@media screen and (max-width: 961px) {
+			.mwrap {
+			font-size: 11px;
+			}
+			.t1 {
+			padding-left: 0px;
+			}
+			span.inname {
+			font-size: 11px;
+			}
+		}
+		@media screen and (max-width: 768px) {
+			.addre {
+				font-size: 12px;
+			}
+			h2.title {
+			margin: 0px;
+			font-size: 22px;
+			}
+			.mwrap.fo-wra {
+				flex-direction: column;
+				font-size: 13px;
+			}
+			input {
+			width: 93%;
+			}
+			.form-left {
+				width: 100%;
+			}
+			form.form-inline.f2 {
+			margin-left: 0px;
+			margin-top: 5px;
+			}
+			.f2in {
+			margin-left: -50%;
+			}
+			.last input {
+			width: 100%;
+				margin-left: -90px;
+			}
+			.mob {
+			border-left: none;
+			}
+			.for-wra {
+			flex-direction: column;
+			}
+			.infor {
+			display: flex;
+			margin-top: 0;
+			margin-left: 8px;
+			}
+			span.inname {
+			font-size: 12px;
+			}
+		}
+		@media screen and (max-width: 500px) {
+			.t1 {
+			font-size: 7px;
+			margin-top: 2px;
+			}
+			h2.title {
+			font-size: 15px;
+			margin-top: 5px;
+			}
+			.last input {
+			width: 100%;
+			margin-left: -10px;
+			}
+			.f2in {
+			margin-left: -23%;
+			}
+			.one label {
+			width: 80%;
+			}
+			table#customers {
+			font-size: 10px;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="mwrap">
+				<div class="t1">
+					<span>|| JAI SWAMINARAYAN ||</span>
+				</div>
+				<div class="t2">
+					<span class="mo">Mo. 9725633161</span>
+				</div>
+			</div>
+			<h2 class="title">AKSHAR FARNITURE</h2>
+			<span class="addre">Nr. Sayona City Under Pass, Nr Sopan saran, Opp Silver Star Gali, Chandlodiya,Ahmedabad-382481</span>
+			<div class="mwrap fo-wra">
+				<div class="form-left">
+					<form class="form-inline f1">
+						<div class="mwrap in-wra">
+							<label for="email">Name</label>
+							<input type="text" id="name" name="name" class="in">
+						</div>
+						<div class="mwrap in-wra">
+							<label for="pwd">Address</label>
+							<input type="texttext" id="name" name="name" class="in">
+						</div>
+						<div class="mwrap in-wra">
+							<input type="text" id="name" name="name" class="in min">
+							<label for="pwd" class="phone">M</label>
+							<input type="text" id="name" name="name" class="in">
+						</div>
+					</form>
+				</div>
+				<div class="form-right">
+					<form class="form-inline f2">
+						<div class="mwrap in-wra f2-wra">
+							<label for="email">Order No: </label>
+							<input type="text" id="name" name="name" class="in f2in">
+						</div>
+						<div class="mwrap in-wra f2-wra">
+							<label for="pwd">Book Date:</label>
+							<input type="texttext" id="name" name="name" class="in f2in">
+						</div>
+						<div class="mwrap in-wra f2-wra last">
+							<label for="pwd">Delivery Date:</label>
+							<input type="texttext" id="name" name="name" class="in">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="mwrap fo-wra sales-wrap">
+				<div class="form-left">
+					<div class="mwrap  one">
+						<label for="email">Sales Person:</label>
+						<input type="text" id="name" name="name" class="in">
+					</div>
+				</div>
+				<div class="mono-wra mob">
+					<div class="mwrap  one">
+						<label for="email" class="mm">M</label>
+						<input type="text" id="name" name="name" class="in sain">
+					</div>
+				</div>
+			</div>
+			<table id="customers">
+				<tr>
+					<th>Description</th>
+					<th>No.</th>
+					<th>Rate</th>
+					<th>Total</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>  <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td class="rt">Total</td>
+		<td class="rt"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td class="rt">Advance</td>
+		<td class="rt"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td class="rt">Balance</td>
+		<td class="rt"></td>
+	</tr>
+</table>
+<div class="mwrap for-wra">
+	<div class="">
+		<ul>
+			<li>Subject to Ahmedabad Jurisdiction Only</li>
+			<li>E.& o.E.</li>
+			<li>Delivery will be Delivered Only After Payment </li>
+		</ul>
+	</div>
+	<div class="infor">
+		<span>For,</span><span class="inname">AKSHAR FARNITURE</span>
+	</div>
+</div>
+</div>
+</body>
+</html>

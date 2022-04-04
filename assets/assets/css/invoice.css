@@ -1,0 +1,238 @@
+.container {
+width: 100%;
+margin: 0 auto;
+border: 1px solid red;
+padding: 5px;
+color: red;
+background-color: yellow;
+font-weight: bold;
+}
+.mwrap {
+display: flex;
+font-size: 15px;
+justify-content: space-between;
+}
+.t1 {
+margin: 0 auto;
+font-size: 12px;
+padding-left: 100px;
+}
+h2.title {
+text-align: center;
+margin: -3px;
+font-size: 30px;
+}
+.addre {
+font-weight: 300;
+margin-top: 4px;
+display: block;
+}
+.form-left {
+width: 86%;
+}
+input {
+width: 100%;
+border: none;
+background: transparent;
+margin-left: 9px;
+border-bottom: 1px solid red;
+color: red;
+}
+input:focus {
+border: none!important;
+border-bottom: 1px solid green!important;
+}
+form.form-inline {
+border: 1px solid red;
+padding: 10px 5px;
+border-radius: 8px;
+margin-top: 5px;
+height: 70px;
+}
+.in-wra {
+margin-bottom: 10px;
+}
+form.form-inline.f2 {
+margin-left: 5px;
+}
+.f2-wra input{
+border: none;
+}
+.f2-wra {
+border-bottom: 1px solid red;
+}
+.last {
+border-bottom: none;
+}
+.f2-wra label {
+width: 100%;
+}
+.phone {
+margin-left: 10px;
+}
+.min {
+margin-left: 2px;
+}
+.f2in {
+margin-left: -30px;
+}
+.sales-wrap {
+border: 1px solid red;
+margin-top: 3px;
+border-radius: 5px;
+padding: 2px 5px;
+}
+.sain {
+width: 87%;
+margin-left: -38px;
+padding-top: -15px;
+height: 14px;
+margin-top: 2px;
+}
+.one label {
+width: 31%;
+border-bottom: none;
+}
+.one input{
+border-bottom: none;
+}
+.mob {
+width: 44%;
+border-left: 1px solid red;
+margin: -2px;
+padding-left: 5px;
+}
+label.mm {
+margin-top: 2px;
+}
+table#customers {
+width: 100%;
+margin-top: 3px;
+border-collapse: collapse;
+}
+table, th {
+border: 1px solid;
+padding: 3px;
+}
+td {
+border-right: 1px solid;
+padding: 5px;
+text-align: center;
+}
+td.rt {
+border: 1px solid;
+}
+ul {
+margin-left: -20px;
+}
+.infor {
+display: flex;
+margin-top: 16px;
+}
+span.inname {
+font-size: 22px;
+margin-top: -5px;
+margin-left: 5px;
+}
+.mwrap.for-wra {
+margin-bottom: -15px;
+}
+/*media query css*/
+@media screen and (max-width: 1225px) {
+.mwrap {
+font-size: 14px;
+}
+.one label {
+width: 39%;
+}
+span.inname {
+font-size: 18px;
+margin-top: -3px;
+}
+@media screen and (max-width: 1085px) {
+.mwrap {
+font-size: 13px;
+}
+span.inname {
+font-size: 15px;
+margin-top: 0px;
+}
+}
+@media screen and (max-width: 961px) {
+.mwrap {
+font-size: 11px;
+}
+.t1 {
+padding-left: 0px;
+}
+span.inname {
+font-size: 11px;
+}
+}
+@media screen and (max-width: 768px) {
+.addre {
+font-size: 12px;
+}
+h2.title {
+margin: 0px;
+font-size: 22px;
+}
+.mwrap.fo-wra {
+flex-direction: column;
+font-size: 13px;
+}
+input {
+width: 93%;
+}
+.form-left {
+width: 100%;
+}
+form.form-inline.f2 {
+margin-left: 0px;
+margin-top: 5px;
+}
+.f2in {
+margin-left: -50%;
+}
+.last input {
+width: 100%;
+margin-left: -90px;
+}
+.mob {
+border-left: none;
+}
+.for-wra {
+flex-direction: column;
+}
+.infor {
+display: flex;
+margin-top: 0;
+margin-left: 8px;
+}
+span.inname {
+font-size: 12px;
+}
+}
+@media screen and (max-width: 500px) {
+.t1 {
+font-size: 7px;
+margin-top: 2px;
+}
+h2.title {
+font-size: 15px;
+margin-top: 5px;
+}
+.last input {
+width: 100%;
+margin-left: -10px;
+}
+.f2in {
+margin-left: -23%;
+}
+.one label {
+width: 80%;
+}
+table#customers {
+font-size: 10px;
+}
+}
