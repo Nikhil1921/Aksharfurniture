@@ -7,8 +7,8 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 	$db['default'] = array(
 		'dsn'	=> '',
 		'hostname' => 'localhost',
-		'username' => 'admin',
-		'password' => '123456',
+		'username' => 'root',
+		'password' => '',
 		'database' => 'jigs_akshar',
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
@@ -29,9 +29,9 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 	$db['default'] = array(
 		'dsn'	=> '',
 		'hostname' => 'localhost',
-		'username' => 'denseeqq_demo',
-		'password' => 'demo@321',
-		'database' => 'denseeqq_akshar',
+		'username' => 'densehwm_demo',
+		'password' => 'Densetek@2018',
+		'database' => 'densehwm_akshar',
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
 		'pconnect' => FALSE,
