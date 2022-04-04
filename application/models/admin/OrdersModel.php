@@ -35,8 +35,10 @@ class OrdersModel extends CI_Model
             $start = date('Y-m-d', strtotime($_POST['s_date']));
             $end = date('Y-m-d', strtotime($_POST['e_date']));
             $this->db->where("o.create_date BETWEEN '$start' AND '$end'");
+            /*$this->db->where(['DATE(o.created_at) >=' => date("d-m-Y", strtotime($_POST['s_date']))]);
+            $this->db->where(['DATE(o.created_at) <=' => date("d-m-Y", strtotime($_POST['e_date']))]);*/
         }
-        
+        // re($this->db);
         foreach ($this->search_column as $item) 
         {
             if($_POST['search']['value']) 
